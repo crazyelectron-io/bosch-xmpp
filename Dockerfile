@@ -6,9 +6,9 @@ FROM node:16-alpine
 LABEL Maintainer="Ron Moerman <ron@crazyelectron.io>" \
       Description="Runs the Bosch XMPP HTTP server in a Docker container for easy deploying."
 
-ENV BOSCH_XMPP_SERIAL_NUMBER=101592982
-ENV BOSCH_XMPP_ACCESS_KEY=PmSEBPTd6c5rD4ap
-ENV BOSCH_XMPP_PASSWORD=dyqjEt-0wahny-mytror
+ENV BOSCH_XMPP_SERIAL_NUMBER={{bosch_xmpp_serial}}
+ENV BOSCH_XMPP_ACCESS_KEY={{bosch_xmpp_key}}
+ENV BOSCH_XMPP_PASSWORD={{bosch_xmpp_password}}
 ENV BOSCH_PORT=3000
 ENV BOSCH_IP=0.0.0.0
 
